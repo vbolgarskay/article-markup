@@ -1,8 +1,133 @@
-/* Тут пиши основные стили */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva,
+    Arial, sans-serif;
+}
+p,
+article,
+section {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+code,
+pre {
+  font-family: 'Courier New', monospace;
+  background-color: #f0f0f0;
+}
 
+h1 {
+  font-size: 42px;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  line-height:39px;
+}
+
+p {
+  font-size: 21px;
+  line-height: 33px;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+body {
+  background-color: #fff;
+}
+
+li{
+    list-style-type: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.article-container {
+  width: 700px;
+  margin: 0 auto;
+}
+.article-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+.logo-block img {
+  max-width: 200px;
+  height: auto;
+}
+
+.header-line {
+  width: 90%;
+  border: 1px solid #ddd;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.main-nav ul li {
+  margin: 0 15px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva,
+    Arial, sans-serif;
+}
+
+.main-nav ul li a:hover {
+  color: #007bff;
+}
+
+.main-nav ul li.active a {
+  font-weight: bold;
+  color: #800000;
+}
 
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+  .page-header {
+    padding: 10px 0;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav ul li {
+    margin: 10px 0;
+  }
+
+  .logo-block img {
+    max-width: 150px;
+  }
+
+  .article-container {
+    width: 90%;
+  }
 }
